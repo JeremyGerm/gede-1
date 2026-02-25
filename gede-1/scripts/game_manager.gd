@@ -10,5 +10,5 @@ func add_point():
 	win()
 
 func win():
-	if score >= 3:
+	if score >= 10:
 		get_tree().change_scene_to_file("res://scenes/win_screen.tscn")
