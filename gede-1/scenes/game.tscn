@@ -251,6 +251,10 @@ limit_bottom = 250
 limit_smoothed = true
 position_smoothing_enabled = true
 
+[node name="CoyoteTimer" type="Timer" parent="player" unique_id=229558661]
+wait_time = 0.15
+one_shot = true
+
 [node name="killzone" parent="." unique_id=233356657 instance=ExtResource("5_iywne")]
 position = Vector2(85, 119)
 
