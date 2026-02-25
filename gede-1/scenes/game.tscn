@@ -218,6 +218,10 @@ _data = {
 &"move": SubResource("Animation_lbhrr")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_gee14"]
+font = ExtResource("2_gee14")
+font_size = 8
+
 [node name="Game" type="Node2D" unique_id=327831290]
 
 [node name="GameManager" type="Node" parent="." unique_id=1707558283]
@@ -225,10 +229,10 @@ unique_name_in_owner = true
 script = ExtResource("1_u5sy4")
 
 [node name="ScoreLabel" type="Label" parent="GameManager" unique_id=969419337]
-offset_left = 403.0
-offset_top = -59.0
-offset_right = 518.0
-offset_bottom = -38.0
+offset_left = 128.0
+offset_top = -29.0
+offset_right = 243.0
+offset_bottom = -8.0
 text = "Coins collected:"
 label_settings = SubResource("LabelSettings_0tnpc")
 horizontal_alignment = 1
@@ -265,22 +269,36 @@ shape = SubResource("WorldBoundaryShape2D_p57ef")
 [node name="coins" type="Node" parent="." unique_id=659490668]
 
 [node name="coin" parent="coins" unique_id=1489635337 instance=ExtResource("4_lbhrr")]
-position = Vector2(184, 74)
+position = Vector2(153, -88)
+
+[node name="coin4" parent="coins" unique_id=2100995940 instance=ExtResource("4_lbhrr")]
+position = Vector2(565, -101)
 
 [node name="coin2" parent="coins" unique_id=172722305 instance=ExtResource("4_lbhrr")]
 position = Vector2(376, -86)
 
 [node name="coin3" parent="coins" unique_id=1889348071 instance=ExtResource("4_lbhrr")]
-position = Vector2(631, -22)
+position = Vector2(376, 119)
+
+[node name="coin5" parent="coins" unique_id=1083552689 instance=ExtResource("4_lbhrr")]
+position = Vector2(664, 43)
+
+[node name="coin6" parent="coins" unique_id=790528796 instance=ExtResource("4_lbhrr")]
+position = Vector2(823, 11)
+
+[node name="coin7" parent="coins" unique_id=1005842490 instance=ExtResource("4_lbhrr")]
+position = Vector2(1206, 26)
+
+[node name="coin8" parent="coins" unique_id=141812187 instance=ExtResource("4_lbhrr")]
+position = Vector2(1334, -118)
+
+[node name="coin9" parent="coins" unique_id=1702004879 instance=ExtResource("4_lbhrr")]
+position = Vector2(1033, -117)
+
+[node name="coin10" parent="coins" unique_id=817909735 instance=ExtResource("4_lbhrr")]
+position = Vector2(822, -150)
 
 [node name="platforms" type="Node" parent="." unique_id=1871045953]
-
-[node name="platform" parent="platforms" unique_id=1000510985 instance=ExtResource("3_lnu2h")]
-position = Vector2(175, 197)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="platforms/platform" unique_id=2118981079]
-libraries/ = SubResource("AnimationLibrary_iywne")
-autoplay = &"move"
 
 [node name="platform2" parent="platforms" unique_id=47961922 instance=ExtResource("3_lnu2h")]
 position = Vector2(175, 197)
@@ -290,4 +308,16 @@ libraries/ = SubResource("AnimationLibrary_iywne")
 autoplay = &"RESET"
 
 [node name="slime" parent="." unique_id=345232177 instance=ExtResource("6_p57ef")]
-position = Vector2(376, 53)
+position = Vector2(888, 68)
+
+[node name="slime2" parent="." unique_id=1798981797 instance=ExtResource("6_p57ef")]
+position = Vector2(888, -108)
+
+[node name="Label" type="Label" parent="." unique_id=1542390736]
+offset_left = 106.0
+offset_top = 112.0
+offset_right = 275.0
+offset_bottom = 135.0
+text = "Collect all Coins to win!
+Avoid the Slimes!"
+label_settings = SubResource("LabelSettings_gee14")
